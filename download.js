@@ -19,7 +19,7 @@ function go()
          
             console.log(current_song_number);
             current_song_number++;            
-            download_timeout = setTimeout(go, 10000);
+            download_timeout = setTimeout(go, 20000);
             if(current_song_number>50)
               stop();
 }
