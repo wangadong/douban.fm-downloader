@@ -10,7 +10,7 @@ function go()
 {
     var link_song={};
 
-        while(current_song_number<songs_numbers){
+        while(current_song_number<songs_number){
             var link=document.getElementById("fm-download-link");
             link_song[current_song_number]=link;
             console.log(current_song_number);
