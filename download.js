@@ -9,8 +9,7 @@ var failed_retry = 0;
 function go()
 {
     var link_song={};
-    try
-    {
+
         while(current_song_number<songs_numbers){
             var link=document.getElementById("fm-download-link");
             link_song[current_song_number]=link;
@@ -27,18 +26,7 @@ function go()
         
         
      
-       
-    }
-    catch (err)
-    {
-        console.error(err);
-      
-    }
-}
-
-function stop()
-{
-    clearTimeout(download_timeout);
+  
 }
 
 function download_json()
