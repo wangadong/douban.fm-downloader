@@ -34,7 +34,7 @@ function open_in_new_tab(url)
     
         popup.document.write(link_song);
 
-     );
+     
 });
 }
 
