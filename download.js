@@ -7,17 +7,16 @@ var link_song;
 function go()
 {
    
-
-        while(current_song_number<songs_number){
-            
+            window.DBR.act("skip");     // next song
+                
             var link=document.getElementById("fm-download-link");
             link_song=link_song+'/n'+link;
             console.log(current_song_number);
             current_song_number++;
-            window.DBR.act("skip");     // next song
-                var sleep_time = Math.ceil(Math.random() * (6 - 4) + 4);
-        }
+            
+         var sleep_time = Math.ceil(Math.random() * (6 - 4) + 4);
         
+        download_timeout = setTimeout(go, sleep_time * 1000);
         
      
   
