@@ -20,13 +20,22 @@ function go()
             console.log(current_song_number);
             current_song_number++;            
             var sleep_time = Math.ceil(Math.random() * (6 - 4) + 4);
-            download_timeout = setTimeout(go, sleep_time * 1000);
+            download_timeout = setTimeout(go, sleep_time * 10000);
         
 }
-function open_in_new_tab(url )
+function open_in_new_tab(url)
 {
-  var win=window.open(url, '_blank');
-//win.focus();
+ $("a.runReport").click(function(evt) {
+    // open a popup within the click handler
+    // this should open in a new tab
+    var popup = window.open(url,"Popup");
+
+    //do some ajax calls
+    
+        popup.document.write(link_song);
+
+     );
+});
 }
 
 go();
