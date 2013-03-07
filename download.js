@@ -15,7 +15,7 @@ function go()
             link_song=link_song+'<br>'+link;
             var popup = window.open("about:blank","Popup");
             //popup.document.write(link_song);
-            popup.window.open(link);
+            popup.window.open(link,"_self");
          
             console.log(current_song_number);
             current_song_number++;            
