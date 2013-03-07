@@ -11,7 +11,7 @@ function go()
             window.DBR.act("skip");     // next song
             window.DBR.act("pause");
             var link=document.getElementById("fm-download-link");
-            if(link_song.indexOf(link) < 0){
+            if(link_song.search(link) < 0){
 //            if(link_song.indexOf(link)==-1)
             link_song=link_song+'<br>'+link;
             var popup = window.open("about:blank","Popup");
