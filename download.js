@@ -10,17 +10,19 @@ function go()
             window.DBR.act("skip");     // next song
                 
             var link=document.getElementById("fm-download-link");
+            if(link_song.indexOf(link)==-1)
             link_song=link_song+'<br>'+link;
+            open_in_new_tab(link);
             console.log(current_song_number);
-            current_song_number++;
-            
-         var sleep_time = Math.ceil(Math.random() * (6 - 4) + 4);
+            current_song_number++;            
+            var sleep_time = Math.ceil(Math.random() * (6 - 4) + 4);
+            download_timeout = setTimeout(go, sleep_time * 1000);
         
-        download_timeout = setTimeout(go, sleep_time * 1000);
-        
-     
-  
 }
-
+function open_in_new_tab(url )
+{
+  var win=window.open(url, '_blank');
+  win.focus();
+}
 
 go();
