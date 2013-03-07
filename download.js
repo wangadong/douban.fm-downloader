@@ -11,7 +11,7 @@ function go()
             window.DBR.act("skip");     // next song
             window.DBR.act("pause");
             var link=document.getElementById("fm-download-link");
-            if(link_song.search(link) < 0){
+
 //            if(link_song.indexOf(link)==-1)
             link_song=link_song+'<br>'+link;
             var popup = window.open("about:blank","Popup");
@@ -19,7 +19,7 @@ function go()
             popup.window.open(link,"_self");
          
             console.log(current_song_number);
-            current_song_number++;            }
+            current_song_number++;            
             download_timeout = setTimeout(go, 20000);
             if(current_song_number>50)
               stop();
