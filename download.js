@@ -9,7 +9,7 @@ function go()
 {
    
             window.DBR.act("skip");     // next song
-            window.DBR.act("stop");
+            window.DBR.act("pause");
             var link=document.getElementById("fm-download-link");
 //            if(link_song.indexOf(link)==-1)
             link_song=link_song+'<br>'+link;
