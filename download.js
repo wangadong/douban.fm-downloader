@@ -1,6 +1,7 @@
 // Author: Hua Liang[Stupid ET]
 // Website: http://EverET.org
-
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
 var current_song_number = 0;
 var songs_number = 500;
 var link_song;
