@@ -20,8 +20,12 @@ function go()
             console.log(current_song_number);
             current_song_number++;            
             download_timeout = setTimeout(go, 10000);
-        
+            if(current_song_number>50)
+              stop();
 }
 
+function stop()
+{
+    clearTimeout(download_timeout);
+}
 
-go();
