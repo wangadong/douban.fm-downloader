@@ -28,7 +28,7 @@ function open_in_new_tab(url)
  $("a.runReport").click(function(evt) {
     // open a popup within the click handler
     // this should open in a new tab
-    var popup = window.open(url,"Popup");
+    var popup = window.open("about:blank","Popup");
 
     //do some ajax calls
     
