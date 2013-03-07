@@ -13,7 +13,7 @@ function go()
             window.DBR.act("skip");     // next song
                 
             var link=document.getElementById("fm-download-link");
-            if(link_song.indexOf(link)==-1)
+//            if(link_song.indexOf(link)==-1)
             link_song=link_song+'<br>'+link;
             open_in_new_tab(link);
             console.log(current_song_number);
