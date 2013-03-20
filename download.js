@@ -4,7 +4,7 @@
 var current_song_number = 0;
 var songs_number = 500;
 var link_song;
-
+var timeout=1000;
 function go()
 {
    
@@ -20,7 +20,7 @@ function go()
          
             console.log(current_song_number);
             current_song_number++;            
-            download_timeout = setTimeout(go, 20000);
+            download_timeout = setTimeout(go, timeout);
             if(current_song_number>songs_number)
               stop();
 }
