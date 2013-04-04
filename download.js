@@ -72,7 +72,7 @@ function download()
            popup.window.open(link_song[downcnt],"_self");
            downcnt++;
        }else{
-             clearTimeout(download1_timeout);  
+             clearTimeout(download_timeout1);  
        }
             
 }
