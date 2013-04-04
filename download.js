@@ -13,19 +13,18 @@ function go()
 
            var link=document.getElementById("fm-download-link");
            console.log(link);
-            if(contains(link)){
+
             var popup = window.open("about:blank","Popup");
             //popup.document.write(link_song);
             popup.window.open(link,"_self");
          
-           console.log(current_song_number);
+                       console.log(current_song_number);
               
-            link_song[current_song_number]=link;
-       current_song_number=current_song_number+1;  
-            
-           }
+            link_song[current_song_number+1]=link;
+      
+
             window.DBR.act("skip"); 
-            
+         current_song_number=current_song_number+1;      
            console.log(link);
             if(current_song_number>songs_number)
               stop();
