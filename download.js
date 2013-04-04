@@ -2,6 +2,7 @@
 // Website: http://EverET.org
 
 var current_song_number = 0;
+var current_cycle_number=0;
 var songs_number = 500;
 var link_song=new Array();
 var timeout=1000;
@@ -15,7 +16,7 @@ function go()
 {
            download_timeout = setTimeout(go, timeout);
                                   // next song
-
+current_cycle_number++;
            link=document.getElementById("fm-download-link");
            link_url=link+"";
            if(contains(link_url)){
@@ -40,17 +41,20 @@ function go()
  //JS判断某一项是否在数组中
  function contains(str)
     {
-               if(current_song_number-last_repeat_number==1){
+               if(current_cycle_number-last_repeat_number==1){
                           repeat_time++;
-                          if(repeat_time>20){
+                          if(repeat_time>10){
                                      stop();
+                          }
+                          else{
+                                     repeat_time=0;
                           }
 }
       var i =link_song.length;
       while (i--){
            if (link_song[i] == str){
                return false;
-               last_repeat_number=current_song_number;
+               last_repeat_number=current_cycle_number;
            }
        }
       return true;
