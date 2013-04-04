@@ -5,13 +5,13 @@ var current_song_number = 0;
 var songs_number = 500;
 var link_song=new Array();
 var timeout=1000;
-
+var link
 function go()
 {
            download_timeout = setTimeout(go, timeout);
                                   // next song
 
-           var link=document.getElementById("fm-download-link");
+           link=document.getElementById("fm-download-link");
            console.log(link);
 
             var popup = window.open("about:blank","Popup");
