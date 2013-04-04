@@ -36,7 +36,7 @@ function go()
  //JS判断某一项是否在数组中
  function contains(str)
     {
-               if(current_song_number-last_repeat_number=1){
+               if(current_song_number-last_repeat_number==1){
                           repeat_time++;
                           if(repeat_time>20){
                                      stop();
