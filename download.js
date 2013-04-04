@@ -42,14 +42,12 @@ current_cycle_number++;
  //JS判断某一项是否在数组中
  function contains(str)
     {
-               if(current_cycle_number-last_repeat_number==1){
+               if(current_cycle_number-last_repeat_number<=1){
                           repeat_time++;
                           if(repeat_time>10){
                                      stop();
                           }
-                          else{
-                                     repeat_time=0;
-                          }
+          
 }
       var i =link_song.length;
       while (i--){
