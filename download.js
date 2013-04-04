@@ -9,9 +9,9 @@ var link;
 function go()
 {
            download_timeout = setTimeout(go, timeout);
-            // next song
-
-            
+                                  // next song
+           link=document.getElementById("fm-download-link");
+           console.log(link);
             if(contains(link)){
             var popup = window.open("about:blank","Popup");
             //popup.document.write(link_song);
@@ -23,7 +23,9 @@ function go()
             
            }
             window.DBR.act("skip"); 
-            link=document.getElementById("fm-download-link");
+                       link=document.getElementById("fm-download-link");
+
+           console.log(link);
             if(current_song_number>songs_number)
               stop();
 }
