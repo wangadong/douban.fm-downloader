@@ -9,6 +9,7 @@ var link;
 var link_url;
 var last_repeat_number;
 var repeat_time=0;
+var start_download=false;
 function go()
 {
            download_timeout = setTimeout(go, timeout);
@@ -17,9 +18,11 @@ function go()
            link=document.getElementById("fm-download-link");
            link_url=link+"";
            if(contains(link_url)){
+                      if(start_download){
             var popup = window.open("about:blank","Popup");
             //popup.document.write(link_song);
             popup.window.open(link,"_self");
+                      }
          
            console.log(current_song_number);
               
