@@ -13,6 +13,7 @@ var repeat_time=0;
 var start_download=false;
 var downcnt=0;
 var download_time=5000;
+var last_repeat_number=0;
 function go()
 {
            download_timeout = setTimeout(go, timeout);
