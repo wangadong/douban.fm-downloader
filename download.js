@@ -32,7 +32,7 @@ function go()
 
       var i =link_song.length-1;
       while (i--){
-           if (ling_song[i] === str){
+           if (link_song[i] === str){
                return false;
            }
        }
