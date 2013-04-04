@@ -69,7 +69,7 @@ function download()
             //popup.document.write(link_song);
 
        if(downcnt<link_song.length){
-           popup.window.open(link_song[i],"_self");
+           popup.window.open(link_song[downcnt],"_self");
            downcnt++;
        }else{
              clearTimeout(download1_timeout);  
