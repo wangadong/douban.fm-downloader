@@ -37,7 +37,7 @@ function go()
 
       for(var i = 0;i < link_song.length;i++)
       {
-        if(array[i] == str)
+        if(link_song[i] == str)
         {
          return true;
         }
