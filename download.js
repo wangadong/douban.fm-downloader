@@ -12,7 +12,7 @@ function go()
             window.DBR.act("skip");     // next song
 
             link=document.getElementById("fm-download-link");
-           if(contains(link)){
+            if(contains(link)){
             var popup = window.open("about:blank","Popup");
             //popup.document.write(link_song);
             popup.window.open(link,"_self");
@@ -21,10 +21,6 @@ function go()
             link_song[current_song_number]=link;
             current_song_number=current_song_number+1;            
             
-           }else{
-                       window.DBR.act("skip");     // next song
-
-            link=document.getElementById("fm-download-link");
            }
             if(current_song_number>songs_number)
               stop();
@@ -34,7 +30,12 @@ function go()
  function contains(str)
     {
 
-
+      var i =link_song.length-1;
+      while (i--){
+           if (ling_song[i] === str){
+               return false;
+           }
+       }
       return true;
     }
 function stop()
