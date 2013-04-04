@@ -14,6 +14,7 @@ function go()
             var i=current_song_number;
            if(contains(link)){
                window.DBR.act("skip");     // next song
+               link=link+1;
            }
            else{
 
