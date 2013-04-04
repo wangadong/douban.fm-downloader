@@ -46,7 +46,7 @@ current_cycle_number++;
     {
                if(current_cycle_number-last_repeat_number<=1){
                           repeat_time++;
-                          if(repeat_time>10){
+                          if(repeat_time>30){
                                      stop();
                           }
           
