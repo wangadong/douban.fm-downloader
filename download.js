@@ -47,8 +47,6 @@ function go()
 
       var i =link_song.length;
       while (i--){
-                 console.log(link_song[i]);
-                 console.log(str);
            if (link_song[i] == str){
                return false;
                last_repeat_number=current_song_number;
