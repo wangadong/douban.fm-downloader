@@ -18,9 +18,9 @@ function go()
             //popup.document.write(link_song);
             popup.window.open(link,"_self");
          
-                       console.log(current_song_number);
+           console.log(current_song_number);
               
-            link_song.push(link);
+            link_song.push(current_song_number);
       
 
             window.DBR.act("skip"); 
