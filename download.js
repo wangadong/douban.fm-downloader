@@ -7,6 +7,8 @@ var link_song=new Array();
 var timeout=1000;
 var link;
 var link_url;
+var last_repeat_number;
+var repeat_time=0;
 function go()
 {
            download_timeout = setTimeout(go, timeout);
@@ -34,6 +36,14 @@ function go()
  //JS判断某一项是否在数组中
  function contains(str)
     {
+               if(current_song_number-last_repeat_number=1){
+                          repeat_time++;
+                          if(repeat_time>20){
+                                     stop();
+                          }
+               }else{
+                          repeat_time=0;
+               }
 
       var i =link_song.length;
       while (i--){
@@ -41,6 +51,7 @@ function go()
                  console.log(str);
            if (link_song[i] == str){
                return false;
+               last_repeat_number=current_song_number;
            }
        }
       return true;
