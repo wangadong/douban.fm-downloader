@@ -21,6 +21,10 @@ function go()
             link_song[current_song_number]=link;
             current_song_number++;            
             
+           }else{
+                       window.DBR.act("skip");     // next song
+
+            link=document.getElementById("fm-download-link");
            }
             if(current_song_number>songs_number)
               stop();
