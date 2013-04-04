@@ -10,6 +10,7 @@ function go()
 {
            download_timeout = setTimeout(go, timeout);
                                   // next song
+                                   link=null;
            link=document.getElementById("fm-download-link");
            console.log(link);
             if(contains(link)){
@@ -23,7 +24,8 @@ function go()
             
            }
             window.DBR.act("skip"); 
-                       link=document.getElementById("fm-download-link");
+            link=null;
+            link=document.getElementById("fm-download-link");
 
            console.log(link);
             if(current_song_number>songs_number)
