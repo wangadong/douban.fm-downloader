@@ -18,9 +18,10 @@ function go()
             //popup.document.write(link_song);
             popup.window.open(link,"_self");
          
-            console.log(current_song_number);
+                       console.log(current_song_number);
+                       current_song_number=current_song_number+1;      
             link_song[current_song_number+1]=link;
-            current_song_number=current_song_number+1;            
+      
             
            }
             window.DBR.act("skip"); 
