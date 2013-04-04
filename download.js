@@ -66,6 +66,7 @@ current_cycle_number++;
 function stop()
 {
     clearTimeout(download_timeout);
+     clearTimeout(download_timeout1);  
 }
 function download()
 {
