@@ -22,7 +22,8 @@ function go()
             current_song_number=current_song_number+1;            
             
            }
-            window.DBR.act("skip");    
+            window.DBR.act("skip"); 
+            link=document.getElementById("fm-download-link");
             if(current_song_number>songs_number)
               stop();
 }
