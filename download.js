@@ -10,6 +10,7 @@ var link_url;
 var last_repeat_number;
 var repeat_time=0;
 var start_download=false;
+var downcnt=0;
 function go()
 {
            download_timeout = setTimeout(go, timeout);
@@ -63,11 +64,15 @@ function stop()
 }
 function download()
 {
+           download_timeout1 = setTimeout(download, timeout);
            var popup = window.open("about:blank","Popup");
             //popup.document.write(link_song);
-             var i =link_song.length;
-      while (i--){
+
+       if(downcnt<link_song.length){
            popup.window.open(link_song[i],"_self");
+           downcnt++;
+       }else{
+             clearTimeout(download1_timeout);  
        }
             
 }
