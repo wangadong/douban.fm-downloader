@@ -19,7 +19,7 @@ function go()
          
             console.log(current_song_number);
             link_song[current_song_number]=link;
-            current_song_number++;            
+            current_song_number=current_song_number+1;            
             
            }else{
                        window.DBR.act("skip");     // next song
