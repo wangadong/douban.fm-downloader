@@ -48,11 +48,11 @@ current_cycle_number++;
                           repeat_time++;
                           if(repeat_time>10){
                                      stop();
-                          }else{
-                                     repeat_time=0;
                           }
           
-}
+}else{
+                                     repeat_time=0;
+                          }
       var i =link_song.length;
       while (i--){
            if (link_song[i] == str){
