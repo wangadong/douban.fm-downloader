@@ -34,13 +34,7 @@ function go()
  function contains(str)
     {
 
-      for(var i = 0;i < link_song.length;i++)
-      {
-        if(link_song[i] == str)
-        {
-         return false;
-        }
-      }
+
       return true;
     }
 function stop()
