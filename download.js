@@ -45,10 +45,7 @@ function go()
                           if(repeat_time>20){
                                      stop();
                           }
-               }else{
-                          repeat_time=0;
-               }
-
+}
       var i =link_song.length;
       while (i--){
            if (link_song[i] == str){
