@@ -30,7 +30,7 @@ function go()
  function contains(str)
     {
 
-      var i =link_song.length-1;
+      var i =link_song.length;
       while (i--){
            if (link_song[i] === str){
                return false;
