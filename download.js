@@ -20,7 +20,7 @@ function go()
          
            console.log(current_song_number);
               
-            link_song.push(current_song_number);
+            link_song.push(link+"");
       
 
             window.DBR.act("skip"); 
