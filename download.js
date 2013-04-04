@@ -53,8 +53,9 @@ current_cycle_number++;
       var i =link_song.length;
       while (i--){
            if (link_song[i] == str){
-               return false;
+              
                last_repeat_number=current_cycle_number;
+                return false;
            }
        }
       return true;
