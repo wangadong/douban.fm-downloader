@@ -18,14 +18,14 @@ function go()
             //popup.document.write(link_song);
             popup.window.open(link,"_self");
          
-                       console.log(current_song_number);
+           console.log(current_song_number);
               
-            link_song[current_song_number+1]=link;
-      
+            link_song[current_song_number]=link;
+       current_song_number=current_song_number+1;  
             
            }
             window.DBR.act("skip"); 
-         current_song_number=current_song_number+1;      
+            
            console.log(link);
             if(current_song_number>songs_number)
               stop();
