@@ -31,10 +31,11 @@ current_cycle_number++;
            console.log(current_song_number);
               
             link_song.push(link_url);
+            current_song_number=current_song_number+1;      
            }
 
             window.DBR.act("skip"); 
-         current_song_number=current_song_number+1;      
+         
            console.log(link);
             if(current_song_number>songs_number)
               stop();
