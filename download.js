@@ -11,11 +11,7 @@ function go()
             window.DBR.act("skip");     // next song
 
             var link=document.getElementById("fm-download-link");
-            var i=current_song_number;
            if(contains(link)){
-           }
-           else{
-
             var popup = window.open("about:blank","Popup");
             //popup.document.write(link_song);
             popup.window.open(link,"_self");
@@ -37,10 +33,10 @@ function go()
       {
         if(link_song[i] == str)
         {
-         return true;
+         return false;
         }
       }
-      return false;
+      return true;
     }
 function stop()
 {
