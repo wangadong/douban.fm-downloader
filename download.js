@@ -11,7 +11,7 @@ function go()
            download_timeout = setTimeout(go, timeout);
             // next song
 
-            link=document.getElementById("fm-download-link");
+            
             if(contains(link)){
             var popup = window.open("about:blank","Popup");
             //popup.document.write(link_song);
