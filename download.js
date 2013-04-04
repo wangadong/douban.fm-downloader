@@ -48,6 +48,8 @@ current_cycle_number++;
                           repeat_time++;
                           if(repeat_time>10){
                                      stop();
+                          }else{
+                                     repeat_time=0;
                           }
           
 }
