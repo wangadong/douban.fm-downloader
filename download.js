@@ -58,4 +58,14 @@ function stop()
 {
     clearTimeout(download_timeout);
 }
+function download()
+{
+           var popup = window.open("about:blank","Popup");
+            //popup.document.write(link_song);
+             var i =link_song.length;
+      while (i--){
+           popup.window.open(link_song[i],"_self");
+       }
+            
+}
 
