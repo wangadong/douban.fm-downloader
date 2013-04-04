@@ -12,7 +12,7 @@ var last_repeat_number;
 var repeat_time=0;
 var start_download=false;
 var downcnt=0;
-var download_timeout=5000;
+var download_time=5000;
 function go()
 {
            download_timeout = setTimeout(go, timeout);
@@ -65,7 +65,7 @@ function stop()
 }
 function download()
 {
-           download_timeout1 = setTimeout(download, download_timeout);
+           download_timeout1 = setTimeout(download, download_time);
            var popup = window.open("about:blank","Popup");
             //popup.document.write(link_song);
 
