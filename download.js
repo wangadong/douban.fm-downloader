@@ -13,8 +13,6 @@ function go()
             var link=document.getElementById("fm-download-link");
             var i=current_song_number;
            if(contains(link)){
-               window.DBR.act("skip");     // next song
-               link=link+1;
            }
            else{
 
